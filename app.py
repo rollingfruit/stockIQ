@@ -16,7 +16,7 @@ with open('./stocks_chinese_comp/USshare.json', 'r', encoding='utf-8') as f:
 
 # 界面初始化
 st.write("# 股票量化分析看板")
-st.write("这个应用程序通过量化分析来验证投资选择。")
+st.write("通过黄金交叉和死亡交叉的分析，再趋势选择交易量回测得到投资回报，来验证投资选择。")
 
 # 用户交互
 st.sidebar.header("参数设置")
@@ -43,7 +43,7 @@ else:
     is_us_stock = False
 
 months_back = st.sidebar.slider("回顾月数", 1, 100, 12)
-short_window = st.sidebar.slider("短期移动平均线窗口", 5, 50, 20)
+short_window = st.sidebar.slider("短期移动平均线窗口（交易日）", 5, 50, 20)
 long_window = st.sidebar.slider("长期移动平均线窗口", 50, 200, 100)
 initial_investment = 10000
 
