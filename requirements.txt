@@ -1,0 +1,8 @@
+streamlit
+pandas
+plotly
+yfinance
+fuzzywuzzy
+python-Levenshtein
+numpy
+requests
